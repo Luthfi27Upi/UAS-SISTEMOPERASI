@@ -4,7 +4,8 @@
 |--|--|
 | NIM | **2341720208** |
 | Nama Lengkap | **Luthfi Triaswangga** |
-| Kelas | TI-1B |
+| Kelas | TI - 1B |
+| No Absen | 17 |
 | Dosen Pengampu | [Mohammad Faried Rahmat, S.ST., M.Tr.T](https://github.com/mrhmt80) |    
 
 # SISTEM OPERASI
@@ -23,10 +24,9 @@
 | 9 | Move File | Memindahkan file dengan perintah ***mv*** |
 | 10 | Create Folder | Membuat folder dengan perintah ***mkdir*** |
 | 11 | Delete Folder | Menghapus sebuah folder dengan perintah ***rm -r***|
-| 12 | Kompres Folder | Mengompres folder dengan perintah ***tar -czf*** |
-| 13 | Ekstrak Folder | Mengekstrak folder dengan perintah ***tar -xf*** |
+| 12 | Compress Folder | Mengompres folder dengan perintah ***tar -czf*** |
+| 13 | Extract Folder | Mengekstrak folder dengan perintah ***tar -xf*** |
 | 0 | Keluar | Keluar dari direktori dengan perintah ***exit 0*** |
 # SCREENSHOT PROGRAM
-![](https://github.com/vierynugroho/UAS-praktikum_SistemOperasi/blob/main/VArchiver.png?raw=true)
-
+![alt text](image.png)
 | VArchiver - Program Shell - UAS Praktikum Sistem Operasi |

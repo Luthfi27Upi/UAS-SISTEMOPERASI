@@ -24,7 +24,7 @@ echo "| 13. Extract folder                     |"
 echo "| 0.  Keluar                             |"
 echo "=========================================="
 
-read -p "Masukkan pilihan Anda: " pilihan
+read -p "Masukkan pilihan Anda: " pilihan 
 
 case $pilihan in
     1)
