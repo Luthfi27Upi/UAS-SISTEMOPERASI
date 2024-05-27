@@ -1,21 +1,28 @@
 #!/bin/bash
 
-echo $(date)
+echo "=========================================="
+echo "|           Luthfi Triaswangga           |"
+echo "|           UAS Sistem Operasi           |"
+echo "|               2341720208               |"
+echo "=========================================="
+echo "|       $(date)     |"
+echo "=========================================="
 echo "| Pilih operasi yang ingin Anda lakukan: |"
 echo "| 1.  Lihat isi direktori                |"
 echo "| 2.  Lihat isi file                     |"
-echo "| 3.  Buat file                          |"
+echo "| 3.  Create file                        |"
 echo "| 4.  Copy file                          |"
-echo "| 5.  Hapus file                         |"
-echo "| 6.  Ganti nama file                    |"
-echo "| 7.  Edit isi file                      |"
+echo "| 5.  Delete file                        |"
+echo "| 6.  Rename file                        |"
+echo "| 7.  Edit file                          |"
 echo "| 8.  Cek koneksi proxy                  |"
 echo "| 9.  Pindahkan file ke folder           |"
-echo "| 10. Buat folder                        |"
-echo "| 11. Hapus folder                       |"
-echo "| 12. Kompres folder                     |"
-echo "| 13. Ekstrak folder                     |"
+echo "| 10. Create folder                      |"
+echo "| 11. Delete folder                      |"
+echo "| 12. Compress folder                    |"
+echo "| 13. Extract folder                     |"
 echo "| 0.  Keluar                             |"
+echo "=========================================="
 
 read -p "Masukkan pilihan Anda: " pilihan
 

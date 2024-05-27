@@ -12,24 +12,21 @@
 |  |  |  |
 |--|--|--|
 |**No**| **Fitur** | **Detail** |
-| 1 | Lihat isi direktori | Melihat daftar isi sebuah direktori dengan perintah ***ls -l*** |
-| 2 | Hapus File | Menghapus file dari sebuah direktori dengan perintah ***rm -i*** dan menghapus sebuah folder dengan perintah ***rm -r***|
-| 3 | Copy File | Menyalin file dengan perintah ***cp*** |
-| 4 | Move File | Memeindahkan file dengan perintah ***mv*** |
-| 5 | Kompres File | Mengompres file dengan perintah ***gzip -c*** |
-| 6 | Ekstrak File | Mengekstrak file terkompres dengan perintah ***gunzip*** |
-| 11 | Hapus Folder | Menghapus sebuah folder dengan perintah ***rm -r***|
-| 7 | Kompres Folder | Mengompres folder dengan perintah ***tar -czf*** |
-| 8 | Ekstrak Folder | Mengekstrak folder dengan perintah ***tar -xf*** |
+| 1 | Lihat Isi Direktori | Melihat daftar isi sebuah direktori dengan perintah ***ls -l*** |
+| 2 | Lihat Isi File | Melihat isi dari sebuah file dengan perintah ***cat*** |
+| 3 | Create file | Membuat file dengan perintah  ***nano*** |
+| 4 | Copy File | Mengduplikat file dengan perintah ***cp*** |
+| 5 | Delete File | Menghapus file dari sebuah direktori dengan perintah ***rm -i*** |
+| 6 | Rename File | Mengganti nama file dari sebuah direktori dengan perintah ***mv*** |
+| 7 | Edit File | Mengubah isi file dengan perintah ***nano*** |
+| 8 | Cek Koneksi Proxy | Mengecek proxy dari sebuah website dengan perintah ***curl*** |
+| 9 | Move File | Memindahkan file dengan perintah ***mv*** |
+| 10 | Create Folder | Membuat folder dengan perintah ***mkdir*** |
+| 11 | Delete Folder | Menghapus sebuah folder dengan perintah ***rm -r***|
+| 12 | Kompres Folder | Mengompres folder dengan perintah ***tar -czf*** |
+| 13 | Ekstrak Folder | Mengekstrak folder dengan perintah ***tar -xf*** |
+| 0 | Keluar | Keluar dari direktori dengan perintah ***exit 0*** |
 # SCREENSHOT PROGRAM
 ![](https://github.com/vierynugroho/UAS-praktikum_SistemOperasi/blob/main/VArchiver.png?raw=true)
 
 | VArchiver - Program Shell - UAS Praktikum Sistem Operasi |
-
-
-echo "=========================================="
-echo "|            Luthfi Triaswangga          |"
-echo "|                   UAS                  |"
-echo "|               2341720208               |"
-echo "=========================================="
-echo "=========================================="
