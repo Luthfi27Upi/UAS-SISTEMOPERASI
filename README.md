@@ -28,5 +28,5 @@
 | 13 | Extract Folder | Mengekstrak folder dengan perintah ***tar -xf*** |
 | 0 | Keluar | Keluar dari direktori dengan perintah ***exit 0*** |
 # SCREENSHOT PROGRAM
-![alt text](image.png)
+![alt text](image.png)<br>
 | VArchiver - Program Shell - UAS Praktikum Sistem Operasi |
