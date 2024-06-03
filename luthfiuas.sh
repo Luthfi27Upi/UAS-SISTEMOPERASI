@@ -157,7 +157,6 @@ case $pilihan in
         echo "CPU: $(lscpu | grep 'Model name' | awk -F: '{print $2}')"
         echo "Memori: $(free -h | grep 'Mem:' | awk '{print $2}')"
         echo "Disk: $(df -h --total | grep 'total' | awk '{print $2}')"
-        echo "=========================================="
         ./luthfiuas.sh
         ;;
     0)
