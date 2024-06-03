@@ -15,12 +15,13 @@ echo "| 4.  Copy file                          |"
 echo "| 5.  Delete file                        |"
 echo "| 6.  Rename file                        |"
 echo "| 7.  Edit file                          |"
-echo "| 8.  Cek koneksi proxy                  |"
-echo "| 9.  Pindahkan file ke folder           |"
-echo "| 10. Create folder                      |"
-echo "| 11. Delete folder                      |"
-echo "| 12. Compress folder                    |"
-echo "| 13. Extract folder                     |"
+echo "| 8.  Pindahkan file ke folder           |"
+echo "| 9.  Create folder                      |"
+echo "| 10. Delete folder                      |"
+echo "| 11. Compress folder                    |"
+echo "| 12. Extract folder                     |"
+echo "| 13. Cek ping jaringan                  |"
+echo "| 14. Cek spesifikasi perangkat          |"
 echo "| 0.  Keluar                             |"
 echo "=========================================="
 
@@ -88,16 +89,7 @@ case $pilihan in
         fi
         ./luthfiuas.sh
         ;;
-    8)
-        read -p "Masukkan alamat proxy (format: http://proxyserver:port): " proxy
-        if curl -x "$proxy" -Is http://www.google.com | grep "HTTP/"; then
-            echo "Proxy bekerja dengan baik."
-        else
-            echo "Proxy tidak bekerja atau tidak dapat dihubungi."
-        fi
-        ./luthfiuas.sh
-        ;;
-    12)
+    11)
         read -p "Masukkan nama folder yang ingin dikompres: " nama_folder
         read -p "Masukkan nama file arsip (misal: arsip.tar.gz): " nama_arsip
         if [ -d "$nama_folder" ]; then
@@ -108,7 +100,7 @@ case $pilihan in
         fi
         ./luthfiuas.sh
         ;;
-    13)
+    12)
         read -p "Masukkan nama file arsip yang ingin diekstrak: " nama_arsip
         read -p "Masukkan direktori tujuan: " direktori_tujuan
         if [ -f "$nama_arsip" ]; then
@@ -120,13 +112,13 @@ case $pilihan in
         fi
         ./luthfiuas.sh
         ;;
-    10)
+    9)
         read -p "Masukkan nama folder yang ingin dibuat: " nama_folder_baru
         mkdir -p "$nama_folder_baru"
         echo "Folder berhasil dibuat."
         ./luthfiuas.sh
         ;;
-    11)
+    10)
         read -p "Masukkan nama folder yang ingin dihapus: " nama_folder_hapus
         if [ -d "$nama_folder_hapus" ]; then
             rm -r "$nama_folder_hapus"
@@ -136,7 +128,7 @@ case $pilihan in
         fi
         ./luthfiuas.sh
         ;;
-    9)
+    8)
         read -p "Masukkan nama file yang ingin dipindahkan: " nama_file_pindah
         if [ -f "$nama_file_pindah" ]; then
             read -p "Masukkan nama folder tujuan: " folder_tujuan
@@ -149,6 +141,23 @@ case $pilihan in
         else
             echo "File tidak ditemukan."
         fi
+        ./luthfiuas.sh
+        ;;
+    13)
+        read -p "Masukkan alamat IP atau domain yang ingin di-ping: " target_ping
+        ping -c 4 "$target_ping"
+        ./luthfiuas.sh
+        ;;
+    14)
+        echo "Informasi Sistem:"
+        echo "=========================================="
+        echo "Hostname: $(hostname)"
+        echo "OS: $(uname -o)"
+        echo "Kernel: $(uname -r)"
+        echo "CPU: $(lscpu | grep 'Model name' | awk -F: '{print $2}')"
+        echo "Memori: $(free -h | grep 'Mem:' | awk '{print $2}')"
+        echo "Disk: $(df -h --total | grep 'total' | awk '{print $2}')"
+        echo "=========================================="
         ./luthfiuas.sh
         ;;
     0)
